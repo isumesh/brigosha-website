@@ -19,7 +19,7 @@ function App() {
 const Style = {
   layout: {
     height: '100vh',
-    backgroundColor: 'red'
+    backgroundColor: 'orange'
   }
 };
 
