@@ -10,38 +10,56 @@ function subNavbar() {
             <ul className='subnav-links'>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/our-story'} 
+                  to = {'/iot/passive-safety'} 
                   className='tabs'
                   activeClassName='active'
                   >
-                     Our Story
+                     Passive Safety
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/teams'}  
+                  to = {'/iot/active-safety'}  
                   className='tabs'
                   activeClassName = 'active'
                   >
-                     Teams
+                     Active Safety
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/join-us'}  
+                  to = {'/iot/transmission-unit'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Join Us
+                     Transmission Unit
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/contact-us'}  
+                  to = {'/iot/body-electronics'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Contact Us
+                     Body Electronics
+                  </NavLink>
+               </li>
+               <li className = 'tab'>
+                  <NavLink 
+                  to = {'/iot/steering-solutions'}  
+                  className='tabs'
+                  activeClassName='active'
+                  >
+                     Steering Solutions
+                  </NavLink>
+               </li>
+               <li className = 'tab'>
+                  <NavLink 
+                  to = {'/iot/infotainment'}  
+                  className='tabs'
+                  activeClassName='active'
+                  >
+                     Infotainment
                   </NavLink>
                </li>
             </ul>

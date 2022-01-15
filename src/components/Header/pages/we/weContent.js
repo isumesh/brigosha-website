@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { Layout } from 'antd';
 import SubNavbar from './subNavbar';
 
@@ -21,6 +21,6 @@ export default function WeContent(){
 
 const subStyle = {
   layout: {
-    height: '100vh',
+    height: 'auto'
   }
 };

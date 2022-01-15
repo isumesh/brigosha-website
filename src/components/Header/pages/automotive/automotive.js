@@ -1,11 +1,25 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import { Layout } from 'antd';
+import SubNavbar from './subNavbar';
 
-function Automotive() {
-    return (
-        <div>
-            Automotive
-        </div>
+const { Content } = Layout;
+ 
+export default function Automotive(){
+    return(
+        <Layout style = {subStyle.layout}>
+          <SubNavbar/>
+          <Layout className='subContent'>
+            <Content>
+              <Outlet/>
+            </Content>
+          </Layout>
+        </Layout>
     )
 }
 
-export default Automotive
+const subStyle = {
+  layout: {
+    height: 'auto'
+  }
+};

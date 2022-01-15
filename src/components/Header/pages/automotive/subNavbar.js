@@ -10,38 +10,38 @@ function subNavbar() {
             <ul className='subnav-links'>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/our-story'} 
+                  to = {'/automotive/gotel'} 
                   className='tabs'
                   activeClassName='active'
                   >
-                     Our Story
+                     Gotel
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/teams'}  
+                  to = {'/automotive/dhruba'}  
                   className='tabs'
                   activeClassName = 'active'
                   >
-                     Teams
+                     Dhruba
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/join-us'}  
+                  to = {'/automotive/botg'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Join Us
+                     BOTG
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/we/contact-us'}  
+                  to = {'/automotive/off-highway-power-train-remote-diagnostics'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Contact Us
+                     Off Highway Power Train Remote Diagnostics
                   </NavLink>
                </li>
             </ul>

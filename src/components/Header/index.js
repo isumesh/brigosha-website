@@ -1,32 +1,48 @@
 import React from 'react';
 import Style, { NavbarContents } from './style';
 import { Header as AntHeader } from 'antd/lib/layout/layout'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import CompanyLogo from './logo.png';
 
 
 export default function Header(){
     return(
         <AntHeader style = {Style.header}>
             <NavbarContents>
-                <Link to = '/' className='navIcon'>
-                    company-logo
-                    {/* <img src = "Banner.svg" alt = 'company-logo'></img> */}
+                <Link to = '/we/our-story' className='navIcon'>
+                    <img 
+                    src = {CompanyLogo} 
+                    alt = 'Brigosha-Logo'
+                    className='companyIcon'
+                    />
                 </Link>
                 <ul className='navbar-links'>
                 <li> 
-                    <Link to = '/we' className='navTabs'> 
+                    <NavLink 
+                    to = '/we/our-story' 
+                    className = 'navTabs'
+                    activeClassName = 'active'
+                    > 
                         We
-                    </Link>     
+                    </NavLink>     
                 </li>
                 <li>
-                    <Link to = '/iot' className='navTabs'> 
+                    <NavLink 
+                    to = '/iot' 
+                    className='navTabs'
+                    activeClassName = 'active'
+                    > 
                         IoT
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to = '/automotive' className='navTabs'> 
+                    <NavLink 
+                    to = '/automotive' 
+                    className='navTabs'
+                    activeClassName = 'active'
+                    > 
                         Automotive
-                    </Link> 
+                    </NavLink> 
                 </li>
                 </ul>
             </NavbarContents>
