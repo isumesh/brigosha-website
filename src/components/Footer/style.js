@@ -2,17 +2,15 @@ import styled from 'styled-components';
 
 export const FooterContents = styled.div`
     padding: 0;
-    background-color: pink;
     
     .company-logo{
         height: 50px;
-        width: 120px;
-        margin-left: 15px;
+        width: 150px;
+
     }
 
     .address{
         padding-top: 10px;
-        background-color: red;
         width: 150px;
     }
 
@@ -21,14 +19,27 @@ export const FooterContents = styled.div`
     }
 
     .footer-links{
-        background-color: yellow;
         padding-top: 45px;
+    }
+
+    .weLinks, .iotLinks, .automotiveLinks{
+        padding-left: 30px;
+    }
+
+    .list{
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .links{
+        color: white;
+        margin-top: 10px;
     }
 `
 
 const Style = {
     footer: {
-        backgroundColor: '#a3a3a3',
+        backgroundColor: '#cfcfcf',
         padding: 0
     }
 }

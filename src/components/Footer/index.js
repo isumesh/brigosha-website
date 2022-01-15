@@ -22,86 +22,89 @@ const Footer = () => {
                             VCR Cornerstone, #780, 3rd Floor, 19th Main, 560102, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102
                         </p>
                     </Col>
-                    <Col span = {4}>
+                    <Col span = {4} className='weLinks'>
                         <h3>We</h3>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                <Link to = '/we/our-story'>
+                                <Link to = '/we/our-story' className='links'>
                                     Our Story
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/Teams'>
+                                <Link to = '/we/Teams' className='links'>
                                     Teams
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/join-us'>
+                                <Link to = '/we/join-us' className='links'>
                                     Join Us
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/contact-us'>
+                                <Link to = '/we/contact-us' className='links'>
                                     Contact Us
                                 </Link>
                             </li>
                         </ul>
                     </Col>
-                    <Col span = {4}>
+                    <Col span = {4} className='iotLinks'>
                         <h3>IoT</h3>
-                        <ul>
+                        <ul className='list'>
                             <li>
-                                <Link to = '/iot/passive-safety'>
+                                <Link to = '/iot/passive-safety' className='links'>
                                     Passive Safety
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/active-safety'>
+                                <Link to = '/iot/active-safety' className='links'>
                                     Active Safety
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/transmission-unit'>
+                                <Link to = '/iot/transmission-unit' className='links'>
                                     Transmission Unit
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/body-electronics'>
+                                <Link to = '/iot/body-electronics' className='links'>
                                     Body Electronics
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/steering-solutions'>
+                                <Link to = '/iot/steering-solutions' className='links'>
                                     Steering Solutions
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/infotainment'>
+                                <Link to = '/iot/infotainment' className='links'>
                                     Infotainment
                                 </Link>
                             </li>
                         </ul>
                     </Col>
-                    <Col span = {4}>
+                    <Col span = {4} className='automotiveLinks'>
                         <h3>Automotive</h3>
-                        <ul>
+                        <ul className='list '>
                             <li>
-                                <Link to = '/automotive/gotel'>
+                                <Link to = '/automotive/gotel' className='links'>
                                     Gotel
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/automotive/dhruba'>
+                                <Link to = '/automotive/dhruba' className='links'>
                                     Dhruba
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/automotive/botg'>
+                                <Link to = '/automotive/botg' className='links'>
                                     BOTG
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/automotive/off-highway-power-train-remote-diagnostics'>
+                                <Link 
+                                to = '/automotive/off-highway-power-train-remote-diagnostics'
+                                className='links'
+                                >
                                     Off Highway Power Train Remote Diagnostics
                                 </Link>
                             </li>

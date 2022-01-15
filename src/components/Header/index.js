@@ -9,7 +9,7 @@ export default function Header(){
     return(
         <AntHeader style = {Style.header}>
             <NavbarContents>
-                <Link to = '/we/our-story' className='navIcon'>
+                <Link to = '/we' className='navIcon'>
                     <img 
                     src = {CompanyLogo} 
                     alt = 'Brigosha-Logo'
@@ -19,7 +19,7 @@ export default function Header(){
                 <ul className='navbar-links'>
                 <li> 
                     <NavLink 
-                    to = '/we/our-story' 
+                    to = '/we' 
                     className = 'navTabs'
                     activeClassName = 'active'
                     > 

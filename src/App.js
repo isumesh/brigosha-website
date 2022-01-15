@@ -32,7 +32,7 @@ function App() {
         <Layout className='content'>
           <Content >
             <Routes>
-              <Route exact path = '/we' element = {<WeContent/>}>
+              <Route path = '/we' element = {<WeContent/>}>
                 <Route path = '/we/our-story' element = {<OurStory/>}/>
                 <Route path = '/we/teams' element = {<Teams/>}/>
                 <Route path = '/we/join-us' element = {<Joinus/>}/>

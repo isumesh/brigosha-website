@@ -1,7 +1,7 @@
 import React from 'react';
 import Style, { NavbarContents } from './style';
 import { Header as AntHeader } from 'antd/lib/layout/layout';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function subNavbar() {
    return (
