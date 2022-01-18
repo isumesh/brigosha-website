@@ -7,7 +7,10 @@ import { FacebookFilled, TwitterSquareFilled, LinkedinFilled, ArrowRightOutlined
 const Footer = () => {
     return (
             <FooterContents>
-                <Row className='footer-links'>
+                <Row 
+                className='footer-links'
+                gutter = {20}
+                >
                     <Col span = {6}  className='company-info'>
                         <Link to = '/we/our-story'>
                             <img 

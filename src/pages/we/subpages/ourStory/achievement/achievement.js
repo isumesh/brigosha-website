@@ -53,12 +53,12 @@ const AchievementWrapper = styled.div`
     padding-bottom: 130px;
     padding-left: 160px;
     padding-right: 160px;
+    background-color: white;
 
     .bold-text{
         text-align: center;
         color: #565656;
         font-size: 15px;
-        box-shadow: 0 0 3px 3px #E6F3FF;
     }
 
     .heading{
@@ -79,6 +79,11 @@ const AchievementWrapper = styled.div`
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .project:hover, .specialist:hover, .technology:hover{
+        transform: scale(1.02);
+        transition: all 0.3s ease-out;
     }
 
     img{
