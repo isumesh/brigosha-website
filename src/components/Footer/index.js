@@ -1,9 +1,8 @@
-import { Col, Divider, Row } from 'antd';
+import { Col, Row, Button, Menu, Dropdown } from 'antd';
 import { FooterContents } from './style';
 import { Link } from 'react-router-dom';
 import CompanyLogo from './logo.svg';
-import { Button } from '../Button/Button';
-import { FacebookFilled, TwitterSquareFilled, LinkedinFilled } from '@ant-design/icons'
+import { FacebookFilled, TwitterSquareFilled, LinkedinFilled, ArrowRightOutlined, DownOutlined } from '@ant-design/icons'
 
 const Footer = () => {
     return (
@@ -118,54 +117,72 @@ const Footer = () => {
                     </Col>
                     <Col span = {6}>
                         <h3>For Associates</h3><br/>
-                        <Button
-                            buttonStyle='btn--primary'
-                            buttonColor='blue'
-                            buttonSize= 'btn--wide'
-                        >
-                            Sign In  
+                        <Button type="primary" className='sign-in'>
+                            Sign In <ArrowRightOutlined />
                         </Button>
+
+
                         <br/><br/>
                         <h4>We're Social</h4>
                         <ul className='social-media'>
-                            <li>
+                            <li className='media-tag'>
                                 <a href = 'https://www.facebook.com/brigosha'>
-                                    <FacebookFilled />
+                                    <FacebookFilled style = {{color: '#3E5C9A'}}/>
                                 </a>
                             </li>
-                            <li>
+                            <li className='media-tag'>
                                 <a href = 'https://www.linkedin.com/company/brigosha-technologies-pvt-lmt/about/'>
                                     <LinkedinFilled style = {{color: '#117BB8'}}/>
                                 </a>
                             </li>
-                            <li>
+                            <li className='media-tag'>
                                 <a href = 'https://twitter.com/Brigosha'>
-                                    <TwitterSquareFilled />
+                                    <TwitterSquareFilled style = {{color: '#29A9E1'}}/>
                                 </a>
                             </li>
                         </ul>
                     </Col>
                 </Row>
-                <Divider/>
-                <Row>
+
+                <Row className='footer-footer'>
                     <Col span = {3}>
-                        Hello
+                        <Dropdown overlay={menu} trigger={['click']}>
+                            <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                                English(US) <DownOutlined />
+                            </a>
+                        </Dropdown>
                     </Col>
                     <Col span = {3}>
-                        Hello
+                        Privacy
                     </Col>
                     <Col span = {3}>
-                        Hello
+                        Terms
                     </Col>
                     <Col span = {3}>
-                        Hello
+                        Sitemap
                     </Col>
-                    <Col span = {12}>
-                        Hello
+                    <Col span = {12} >
+                        <h5 className='footertext'>
+                            ISO 9001:2015 Certified Company<br/>
+                        Copyright @ Brigosha Technologies. All rights reserved.</h5>
                     </Col>
                 </Row>
             </FooterContents>
     )
 }
+
+const menu = (
+    <Menu>
+        <Menu.Item key="0">
+            Hindi
+        </Menu.Item>
+        <Menu.Item key="1">
+            Assamese
+        </Menu.Item>
+        <Menu.Item key="3">
+            Kannada   
+        </Menu.Item>
+    </Menu>
+  );
 
 export default Footer;

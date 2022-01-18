@@ -6,14 +6,13 @@ export const FooterContents = styled(AntFooter)`
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 80px;
-
     background-color: #E6E6E6;
     bottom: 0;
-    height: 520px;
+    height: auto;
     
     .company-logo{
-        height: 32px;
-        width: 120px;
+        height: auto;
+        width: auto;
     }
 
     .address{
@@ -35,7 +34,6 @@ export const FooterContents = styled(AntFooter)`
         transform: scale(1.02);
     }
 
-
     .automotiveLinks{
         width: 200px;
     }
@@ -49,10 +47,40 @@ export const FooterContents = styled(AntFooter)`
     
     .social-media{
         font-size: 30px;
-        margin: 0;
+        margin-top: -10px;
         padding: 0;
         display: flex;
         list-style: none;
+    }
+
+    .media-tag{
+        margin-right: 10px;
+    }
+
+    .sign-in{
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        font-size: 20px;
+        box-shadow: 0 0 3px 2px #c9c9c9;
+    }
+
+    .footer-links{
+        height: 350px;
+    }
+
+    .footer-footer{
+        color: #565656;
+        border-top: 1px solid grey;
+        padding-top: 15px;
+    }
+
+    .ant-dropdown-link{
+        color: #565656;
+    }
+
+    .footertext{
+        text-align: right;
     }
     
 `
