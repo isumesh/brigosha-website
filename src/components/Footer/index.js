@@ -1,13 +1,12 @@
 import { Col, Divider, Row } from 'antd';
-import { Footer as AntFooter } from 'antd/lib/layout/layout'
-import 'antd/dist/antd.css';
-import Style, { FooterContents } from './style';
+import { FooterContents } from './style';
 import { Link } from 'react-router-dom';
-import CompanyLogo from './logo.png';
+import CompanyLogo from './logo.svg';
+import { Button } from '../Button/Button';
+import { FacebookFilled, TwitterSquareFilled, LinkedinFilled } from '@ant-design/icons'
 
 const Footer = () => {
     return (
-        <AntFooter style={Style.footer}>
             <FooterContents>
                 <Row className='footer-links'>
                     <Col span = {6}  className='company-info'>
@@ -19,14 +18,17 @@ const Footer = () => {
                             />
                         </Link>
                         <p className='address'>
-                            VCR Cornerstone, #780, 3rd Floor, 19th Main, 560102, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102
+                            VCR Cornerstone, #780, 3rd Floor, 19th Main, 560102, 
+                            1st Sector, HSR Layout, Bengaluru, Karnataka 560102
                         </p>
                     </Col>
                     <Col span = {4} className='weLinks'>
+                        <Link to = '/we/our-story'>
                         <h3>We</h3>
+                        </Link>
                         <ul className='list'>
                             <li>
-                                <Link to = '/we/our-story' className='links'>
+                                <Link to = '/we/our-story' className='links' >
                                     Our Story
                                 </Link>
                             </li>
@@ -48,7 +50,9 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col span = {4} className='iotLinks'>
-                        <h3>IoT</h3>
+                        <Link to='/iot/passive-safety'>
+                            <h3>IoT</h3>
+                        </Link>
                         <ul className='list'>
                             <li>
                                 <Link to = '/iot/passive-safety' className='links'>
@@ -83,7 +87,9 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col span = {4} className='automotiveLinks'>
-                        <h3>Automotive</h3>
+                        <Link to = 'automotive/gotel'>
+                            <h3>Automotive</h3>
+                        </Link>
                         <ul className='list '>
                             <li>
                                 <Link to = '/automotive/gotel' className='links'>
@@ -111,7 +117,33 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col span = {6}>
-                        Hello
+                        <h3>For Associates</h3><br/>
+                        <Button
+                            buttonStyle='btn--primary'
+                            buttonColor='blue'
+                            buttonSize= 'btn--wide'
+                        >
+                            Sign In  
+                        </Button>
+                        <br/><br/>
+                        <h4>We're Social</h4>
+                        <ul className='social-media'>
+                            <li>
+                                <a href = 'https://www.facebook.com/brigosha'>
+                                    <FacebookFilled />
+                                </a>
+                            </li>
+                            <li>
+                                <a href = 'https://www.linkedin.com/company/brigosha-technologies-pvt-lmt/about/'>
+                                    <LinkedinFilled style = {{color: '#117BB8'}}/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = 'https://twitter.com/Brigosha'>
+                                    <TwitterSquareFilled />
+                                </a>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
                 <Divider/>
@@ -133,7 +165,6 @@ const Footer = () => {
                     </Col>
                 </Row>
             </FooterContents>
-        </AntFooter>
     )
 }
 

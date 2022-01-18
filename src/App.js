@@ -1,24 +1,25 @@
-
+import 'antd/dist/antd.css';
 import { Layout } from 'antd';
 import { Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components';
-import WeContent from './components/Header/pages/we/weContent';
-import OurStory from './components/Header/pages/we/subpages/ourStory/ourStory';
-import Teams from './components/Header/pages/we/subpages/teams/teams';
-import Joinus from './components/Header/pages/we/subpages/joinUs/joinUs';
-import ContactUs from './components/Header/pages/we/subpages/contactUs/contactUs';
-import Iot from './components/Header/pages/iot/iot';
-import Automotive from './components/Header/pages/automotive/automotive';
-import PassiveSafety from './components/Header/pages/iot/subpages/passiveSafety/passiveSafety';
-import ActiveSafety from './components/Header/pages/iot/subpages/activeSafety/activeSafety';
-import TransmissionUnit from './components/Header/pages/iot/subpages/transmissionUnit/transmissionUnit';
-import BodyElectronics from './components/Header/pages/iot/subpages/bodyElectronics/bodyElectronics';
-import SteeringSolutions from './components/Header/pages/iot/subpages/steeringSolutions/steeringSolutions';
-import Infotainment from './components/Header/pages/iot/subpages/infotainment/infotainment';
-import Gotel from './components/Header/pages/automotive/subpages/gotel/gotel';
-import Dhruba from './components/Header/pages/automotive/subpages/dhruba/dhruba';
-import Botg from './components/Header/pages/automotive/subpages/botg/botg';
-import Diagnostics from './components/Header/pages/automotive/subpages/diagnostics/diagnostics';
+import WeContent from './pages/we/weContent';
+import OurStory from './pages/we/subpages/ourStory/ourStory';
+import Teams from './pages/we/subpages/teams/teams';
+import Joinus from './pages/we/subpages/joinUs/joinUs';
+import ContactUs from './pages/we/subpages/contactUs/contactUs';
+import Iot from './pages/iot/iot';
+import Automotive from './pages/automotive/automotive';
+import PassiveSafety from './pages/iot/subpages/passiveSafety/passiveSafety';
+import ActiveSafety from './pages/iot/subpages/activeSafety/activeSafety';
+import TransmissionUnit from './pages/iot/subpages/transmissionUnit/transmissionUnit';
+import BodyElectronics from './pages/iot/subpages/bodyElectronics/bodyElectronics';
+import SteeringSolutions from './pages/iot/subpages/steeringSolutions/steeringSolutions';
+import Infotainment from './pages/iot/subpages/infotainment/infotainment';
+import Gotel from './pages/automotive/subpages/gotel/gotel';
+import Dhruba from './pages/automotive/subpages/dhruba/dhruba';
+import Botg from './pages/automotive/subpages/botg/botg';
+import Diagnostics from './pages/automotive/subpages/diagnostics/diagnostics';
+import styled from 'styled-components';
 
 
 
@@ -27,8 +28,8 @@ const { Content } = Layout;
 
 function App() {
   return (
-      <Layout style={Style.layout}>
-        <Header />
+      <Page>
+        <Header className = 'heading'/>
         <Layout className='content'>
           <Content >
             <Routes>
@@ -56,15 +57,15 @@ function App() {
           </Content>
           <Footer />
         </Layout>
-      </Layout>
+      </Page>
   );
 }
 
-const Style = {
-  layout: {
-    height: '100vh',
-    backgroundColor: 'white'
-  }
-};
+const Page = styled(Layout)`
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    
+`
 
 export default App;

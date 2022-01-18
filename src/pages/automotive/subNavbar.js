@@ -1,70 +1,52 @@
 import React from 'react';
 import Style, { NavbarContents } from './style';
 import { Header as AntHeader } from 'antd/lib/layout/layout';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function subNavbar() {
    return (
-      <AntHeader style = {Style.subheader}>
+
          <NavbarContents>
             <ul className='subnav-links'>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/iot/passive-safety'} 
+                  to = {'/automotive/gotel'} 
                   className='tabs'
                   activeClassName='active'
                   >
-                     Passive Safety
+                     Gotel
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/iot/active-safety'}  
+                  to = {'/automotive/dhruba'}  
                   className='tabs'
                   activeClassName = 'active'
                   >
-                     Active Safety
+                     Dhruba
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/iot/transmission-unit'}  
+                  to = {'/automotive/botg'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Transmission Unit
+                     BOTG
                   </NavLink>
                </li>
                <li className = 'tab'>
                   <NavLink 
-                  to = {'/iot/body-electronics'}  
+                  to = {'/automotive/off-highway-power-train-remote-diagnostics'}  
                   className='tabs'
                   activeClassName='active'
                   >
-                     Body Electronics
-                  </NavLink>
-               </li>
-               <li className = 'tab'>
-                  <NavLink 
-                  to = {'/iot/steering-solutions'}  
-                  className='tabs'
-                  activeClassName='active'
-                  >
-                     Steering Solutions
-                  </NavLink>
-               </li>
-               <li className = 'tab'>
-                  <NavLink 
-                  to = {'/iot/infotainment'}  
-                  className='tabs'
-                  activeClassName='active'
-                  >
-                     Infotainment
+                     Off Highway Power Train Remote Diagnostics
                   </NavLink>
                </li>
             </ul>
          </NavbarContents>
-      </AntHeader>
+
    )
 }
 

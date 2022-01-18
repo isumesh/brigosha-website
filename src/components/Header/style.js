@@ -1,61 +1,52 @@
 import styled from 'styled-components';
+import { Header as AntHeader } from 'antd/lib/layout/layout';
 
-export const NavbarContents = styled.nav`
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+export const NavbarContents = styled(AntHeader)`
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
     margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
 
     .navTabs{
         float: right;
-        color: #92A9BD;
+        color: #B3B3B3;
         font-size: 1.2rem;
-        font-weight: bold;
         text-decoration: none;
         text-align: center;
-        margin-right: 8px;
-        margin-bottom: -2px;
         width: 100px;
-    }
-
-    .companyIcon{
-        height: 40px;
-        width 150px;
+        margin-right: 10px;
     }
 
     .navbar-links{
         display: flex;
         flex-direction: row;
         justify-content: end;
-        height: 70px;
-        align-items: center;
+        height: 80px;
         float: right;
         margin: 0;
         width: 60%;
-        padding: 0;
         list-style: none;
     }
 
     .active{
-        border-bottom: 3px solid blue;
+        color: #0086FF;
+        font-weight: bold;
+        height: 64px;
+        border-bottom: 2px solid blue;
+        transform: scale(1.02);
     }
 
     .navIcon{
-        color: black;
-        text-decoration: none;
+        height: 32px;
+        width: 123px;
         float: left;
         width: auto;
     }
 
 `
-
-const Style = {
-    header: {
-        height: 70,
-        paddingRight: 100,
-        paddingLeft: 100,
-        backgroundColor: 'white'
-    },
-}
-
-export default Style;

@@ -1,36 +1,34 @@
 import React from 'react';
-import Style, { NavbarContents } from './style';
-import { Header as AntHeader } from 'antd/lib/layout/layout'
+import { NavbarContents } from './style';
 import { Link, NavLink } from 'react-router-dom';
-import CompanyLogo from './logo.png';
+import CompanyLogo from './logo.svg';
 
 
 export default function Header(){
     return(
-        <AntHeader style = {Style.header}>
-            <NavbarContents>
-                <Link to = '/we' className='navIcon'>
-                    <img 
-                    src = {CompanyLogo} 
-                    alt = 'Brigosha-Logo'
-                    className='companyIcon'
-                    />
-                </Link>
-                <ul className='navbar-links'>
+        <NavbarContents>
+            <Link to = '/we/our-story' className='navIcon'>
+                <img 
+                src = {CompanyLogo} 
+                alt = 'Brigosha-Logo'
+                className='companyIcon'
+                />
+            </Link>
+            <ul className='navbar-links'>
                 <li> 
                     <NavLink 
                     to = '/we' 
                     className = 'navTabs'
-                    activeClassName = 'active'
+                    activeclassname = 'active'
                     > 
-                        We
+                            We
                     </NavLink>     
                 </li>
                 <li>
                     <NavLink 
                     to = '/iot' 
                     className='navTabs'
-                    activeClassName = 'active'
+                    activeclassname = 'active'
                     > 
                         IoT
                     </NavLink>
@@ -39,14 +37,14 @@ export default function Header(){
                     <NavLink 
                     to = '/automotive' 
                     className='navTabs'
-                    activeClassName = 'active'
+                    activeclassname = 'active'
                     > 
                         Automotive
                     </NavLink> 
                 </li>
-                </ul>
-            </NavbarContents>
-        </AntHeader>
+            </ul>
+        </NavbarContents>
+
 
     )
 }
