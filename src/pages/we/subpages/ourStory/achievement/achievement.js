@@ -50,7 +50,7 @@ function Achievement() {
 const AchievementWrapper = styled.div`
     padding-top: 150px;
     height: auto;
-    padding-bottom: 130px;
+    padding-bottom: 150px;
     padding-left: 160px;
     padding-right: 160px;
     background-color: white;

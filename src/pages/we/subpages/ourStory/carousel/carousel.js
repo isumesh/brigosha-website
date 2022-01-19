@@ -12,6 +12,7 @@ function Carosel() {
         >
             <div>
             <h3 style = {Style.contentStyle}>
+
                 <Container/>
             </h3>
             </div>
@@ -63,6 +64,7 @@ const Content = styled.div`
 
     .Banner{
         width: 100%;
+
     }
 
 `
@@ -72,7 +74,7 @@ const CarouselWrapper = styled(Carousel)`
     padding-left: 120px;
     padding-right: 120px;
     background-color: #E6F3FF;
-    height: 80vh;
+    height: 90vh;
 
     .card{
         color: 'black',

@@ -90,6 +90,11 @@ const Style = styled.div`
   background-color:  #F7F7F7;
   }
 
+  .img-container:hover{
+    transform: scale(1.01);
+    transition: all 0.3s ease-out;
+  }
+
   .none{
     display: none;
   }
@@ -124,6 +129,7 @@ const Style = styled.div`
     width: 200px;
     height: 50px;
     font-size: 15px;
+    box-shadow: 0 0 3px 2px #dedede;
   }
 `
 

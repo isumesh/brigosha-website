@@ -47,7 +47,7 @@ const Obj1 = {
     topLine: '',
     btnType: 'primary',
     headline: 'Automotive',
-    description: 'The next gen automotive technology is all about autonomous and electric mobility solutions. We are witnessing seamless connectivity, electrification, and additive manufacturing. At Brigosha, we strive hard to stay in sync with these advancements.learn more',
+    description: 'The next gen automotive technology is all about autonomous and electric mobility solutions. We are witnessing seamless connectivity, electrification, and additive manufacturing. At Brigosha, we strive hard to stay in sync with these advancements.',
     buttonLabel: 'LEARN MORE',
     img: Automotive,
     alt: 'automotive-image',
