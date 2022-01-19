@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from './Card';
+import Card from '../../../../Card';
 import Automotive from './automotive.svg'
 import Iot from './iot.svg';
 
 function Expertise() {
     return (
-        <Container>
-            <span className='header'>Our Expertise</span>
-            <p className='top'>
+        <ExpertiseContainer>
+            <span className='expertise-header'>Our Expertise</span>
+            <p className='expertise-top'>
                 You can expect high quality services 
                 from us working with AI and intelligent 
                 machines that unlock human potential.
@@ -16,24 +16,24 @@ function Expertise() {
             <br/>
             <Card {...Obj1}/><br/>
             <Card {...Obj2}/>
-        </Container>
+        </ExpertiseContainer>
     )
 }
 
-const Container = styled.div`
+const ExpertiseContainer = styled.div`
     height: auto;
     background-color: #F7F7F7;
     padding-top: 80px;
     padding-right: 120px;
     padding-left: 120px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 150px;
 
-    .header{
+    .expertise-header{
         font-size: 40px;
     }
 
-    .top{
+    .expertise-top{
         padding-top: 20px;
         font-size: 15px;
         color: #565656;

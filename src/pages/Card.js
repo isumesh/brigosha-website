@@ -13,11 +13,11 @@ const Card = ({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart, 
 }) => {
 
   return (
-    <Style>
+    <CardStyle>
       <Row
         wrap = {true}
         className = 'card'
@@ -25,29 +25,30 @@ const Card = ({
       >
         <Col 
         flex = '1 1 400px'
-        className={imgStart === 'start' ? 'text-container left' : 'text-container right'}
+        className={imgStart === 'start' ? 'card-text-container left' : 'card-text-container right'}
         order = {imgStart === 'start' ? 2 : 1}
+        gutter = {20}
         >
 
             <div 
-            className={topLine === '' ? 'top-line none' : 'top-line'}
+            className={topLine === '' ? 'card-top-line none' : 'card-top-line'}
             >
               {topLine}
-            </div> 
+            </div> <br/>
 
             <h1 
-            className='heading' 
+            className='card-heading' 
             >
               {headline}
             </h1>
 
             <p 
-            className='content'
+            className='card-content'
             >
               {description}
             </p>
 
-            <Button type = {btnType} className='button'>
+            <Button type = {btnType} className='card-button'>
               {buttonLabel}
               {btnType === 'primary' ? 
               <ArrowRightOutlined />:
@@ -61,36 +62,42 @@ const Card = ({
         <Col 
         flex = '0 1 480px'
         order = {imgStart === 'start' ? 1 : 2}
-        className='img-container'
+        className='card-img-container'
         >
-          <img src={img} alt={alt} className='image' />
+          <img src={img} alt={alt} className='card-image' />
         </Col>
 
       </Row>
-    </Style>
+    </CardStyle>
   )
 };
 
 
-const Style = styled.div`
+const CardStyle = styled.div`
   .card {
     color: #000D19;
   }
 
-  .text-container{
-    height: 300px;
+  .card-text-container{
+    height: auto;
     font-size: 15px;
     padding-top: 80px;
     padding-right: 5px;
     padding-left: 5px;
     color: #565656;
+    line-height: 30px;
+
   }
 
-  .content{
+  .card-content{
   background-color:  #F7F7F7;
   }
 
-  .img-container:hover{
+  .card-img-container{
+    width: 50%;
+  }
+
+  .card-img-container:hover{
     transform: scale(1.01);
     transition: all 0.3s ease-out;
   }
@@ -107,29 +114,36 @@ const Style = styled.div`
     text-align: right;
   }
 
-  .image{
+  .card-image{
     height: 500px;
-    width: 450px; 
+    width: 400px; 
   }
 
-  .top-line {
+  .card-top-line {
     font-size: 16px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 16px;
   }
 
-  .heading {
+  .card-heading {
     margin-bottom: 24px;
     font-size: 30px;
     font-weight: 500;
   }
   
-  .button{
+  .card-button{
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     font-size: 15px;
     box-shadow: 0 0 3px 2px #dedede;
+    border-radius: 4px;
+  }
+
+  .card-button:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-out;
   }
 `
 

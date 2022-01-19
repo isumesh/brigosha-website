@@ -28,7 +28,7 @@ const { Content } = Layout;
 
 function App() {
   return (
-      <Page>
+      <ContentPage>
         <Header className = 'heading'/>
         <Layout className='content'>
           <Content >
@@ -57,11 +57,11 @@ function App() {
           </Content>
           <Footer />
         </Layout>
-      </Page>
+      </ContentPage>
   );
 }
 
-const Page = styled(Layout)`
+const ContentPage = styled(Layout)`
     position: relative;
     height: 100%;
     overflow: auto;

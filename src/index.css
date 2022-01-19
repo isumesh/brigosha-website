@@ -13,7 +13,7 @@ code {
 }
 
 .content {
-  background-color: blue;
   height: calc(100% - 80px);
   overflow: auto;
+
 }

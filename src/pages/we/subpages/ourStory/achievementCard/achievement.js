@@ -11,9 +11,9 @@ function Achievement() {
         <AchievementWrapper>
             <Row>
                 <Col span = {24}>
-                    <p className='bold-text'>THE COMPANY AT A GLANCE</p>
-                    <p className='heading'>Our Achievements in Numbers </p>
-                    <p className='body'>            
+                    <p className='achievement-bold-text'>THE COMPANY AT A GLANCE</p>
+                    <p className='achievement-heading'>Our Achievements in Numbers </p>
+                    <p className='achievement-body'>            
                         When it comes to setting benchmarks, 
                         we don’t shy away from challenges. 
                         We believe in taking them up head on. 
@@ -23,23 +23,20 @@ function Achievement() {
                     </p> 
                 </Col>
             </Row>
-            <Row className='image'> 
-                <Col 
-                span={8} 
-                className='project'
-                >
+            <Row className='achievement-image'> 
+                <Col span={8} className='achievement-project'>
                     <img src = {Projectsvg} alt = 'img'/><br/>
-                    <p className='count'>700</p>
+                    <p className='achievement-count'>700</p>
                     Projects Delivered
                 </Col>
-                <Col span={8} className='specialist'>
+                <Col span={8} className='achievement-specialist'>
                     <img src = {Specialistsvg} alt = 'img'/><br/>
-                    <p className='count'>200</p>
+                    <p className='achievement-count'>200</p>
                     Specialist
                 </Col>
-                <Col span={8} className='technology'>
+                <Col span={8} className='achievement-technology'>
                     <img src = {Techsvg} alt = 'img'/><br/>
-                    <p className='count'>200</p>
+                    <p className='achievement-count'>200</p>
                     Technologies Used
                 </Col>
             </Row>
@@ -55,33 +52,33 @@ const AchievementWrapper = styled.div`
     padding-right: 160px;
     background-color: white;
 
-    .bold-text{
+    .achievement-bold-text{
         text-align: center;
         color: #565656;
         font-size: 15px;
     }
 
-    .heading{
+    .achievement-heading{
         font-size: 40px;   
         text-align: center;
     }
 
-    .body{
+    .achievement-body{
         color: #565656;
         text-align: center;
     }
 
-    .image{
+    .achievement-image{
         padding-top: 50px;
     }
 
-    .project, .specialist, .technology{
+    .achievement-project, .achievement-specialist, .achievement-technology{
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .project:hover, .specialist:hover, .technology:hover{
+    .achievement-project:hover, .achievement-specialist:hover, .achievement-technology:hover{
         transform: scale(1.02);
         transition: all 0.3s ease-out;
     }
@@ -91,7 +88,7 @@ const AchievementWrapper = styled.div`
         width: 200px;
     }
 
-    .count{
+    .achievement-count{
         padding-top: 10px;
         font-size: 40px;
         font-weight: 600;

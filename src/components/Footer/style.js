@@ -10,19 +10,19 @@ export const FooterContents = styled(AntFooter)`
     bottom: 0;
     height: auto;
     
-    .company-logo{
+    .footer-company-logo{
         height: auto;
         width: auto;
     }
 
-    .address{
+    .footer-address{
         color: #565656;
         margin-top: 25px;
         width: 150px;
         height: 95px;
     }
 
-    .links{
+    .footer-links{
         color: #565656;
     }
 
@@ -38,14 +38,14 @@ export const FooterContents = styled(AntFooter)`
         width: 200px;
     }
 
-    .list{
+    .footer-list{
         margin-top: 25px;
         list-style: none;
         padding-left: 0;
         height: 150px;
     }
     
-    .social-media{
+    .footer-social-media{
         font-size: 30px;
         margin-top: -10px;
         padding: 0;
@@ -53,11 +53,11 @@ export const FooterContents = styled(AntFooter)`
         list-style: none;
     }
 
-    .media-tag{
+    .footer-media-tag{
         margin-right: 10px;
     }
-
-    .sign-in{
+    
+    .footer-sign-in{
         width: 200px;
         height: 50px;
         border-radius: 4px;
@@ -65,7 +65,12 @@ export const FooterContents = styled(AntFooter)`
         box-shadow: 0 0 3px 2px #c9c9c9;
     }
 
-    .footer-links{
+    .footer-sign-in:hover{
+        transform: scale(1.02);
+        transition: all 0.3s ease-out;
+    }
+
+    .footer-footer-links{
         height: 350px;
     }
 

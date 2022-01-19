@@ -41,8 +41,8 @@ const Style = {
 function Container() {
     return(
         <Content>
-            <img src = {Banner} alt = 'Banner' className='Banner'/>
-            <p className='Banner-text'>
+            <img src = {Banner} alt = 'Carosel-Banner' className='Carosel-Banner'/>
+            <p className='Carosel-Banner-text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam.
@@ -55,14 +55,14 @@ const Content = styled.div`
     font-size: 28px;
     font-weight: 400;
 
-    .Banner-text{
+    .Carosel-Banner-text{
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
     }
 
-    .Banner{
+    .Carosel-Banner{
         width: 100%;
 
     }
@@ -74,7 +74,8 @@ const CarouselWrapper = styled(Carousel)`
     padding-left: 120px;
     padding-right: 120px;
     background-color: #E6F3FF;
-    height: 90vh;
+    height: auto;
+    padding-bottom: 50px;
 
     .card{
         color: 'black',

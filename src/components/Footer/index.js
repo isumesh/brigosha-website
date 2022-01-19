@@ -8,18 +8,18 @@ const Footer = () => {
     return (
             <FooterContents>
                 <Row 
-                className='footer-links'
+                className='footer-footer-links'
                 gutter = {20}
                 >
-                    <Col span = {6}  className='company-info'>
+                    <Col span = {6}  className='footer-company-info'>
                         <Link to = '/we/our-story'>
                             <img 
                             src = {CompanyLogo} 
                             alt = 'Brigosha-Logo'
-                            className='company-logo'
+                            className='footer-company-logo'
                             />
                         </Link>
-                        <p className='address'>
+                        <p className='footer-address'>
                             VCR Cornerstone, #780, 3rd Floor, 19th Main, 560102, 
                             1st Sector, HSR Layout, Bengaluru, Karnataka 560102
                         </p>
@@ -28,24 +28,24 @@ const Footer = () => {
                         <Link to = '/we/our-story'>
                         <h3>We</h3>
                         </Link>
-                        <ul className='list'>
+                        <ul className='footer-list'>
                             <li>
-                                <Link to = '/we/our-story' className='links' >
+                                <Link to = '/we/our-story' className='footer-links' >
                                     Our Story
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/Teams' className='links'>
+                                <Link to = '/we/Teams' className='footer-links'>
                                     Teams
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/join-us' className='links'>
+                                <Link to = '/we/join-us' className='footer-links'>
                                     Join Us
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/we/contact-us' className='links'>
+                                <Link to = '/we/contact-us' className='footer-links'>
                                     Contact Us
                                 </Link>
                             </li>
@@ -55,34 +55,34 @@ const Footer = () => {
                         <Link to='/iot/passive-safety'>
                             <h3>IoT</h3>
                         </Link>
-                        <ul className='list'>
+                        <ul className='footer-list'>
                             <li>
-                                <Link to = '/iot/passive-safety' className='links'>
+                                <Link to = '/iot/passive-safety' className='footer-links'>
                                     Passive Safety
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/active-safety' className='links'>
+                                <Link to = '/iot/active-safety' className='footer-links'>
                                     Active Safety
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/transmission-unit' className='links'>
+                                <Link to = '/iot/transmission-unit' className='footer-links'>
                                     Transmission Unit
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/body-electronics' className='links'>
+                                <Link to = '/iot/body-electronics' className='footer-links'>
                                     Body Electronics
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/steering-solutions' className='links'>
+                                <Link to = '/iot/steering-solutions' className='footer-links'>
                                     Steering Solutions
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/iot/infotainment' className='links'>
+                                <Link to = '/iot/infotainment' className='footer-links'>
                                     Infotainment
                                 </Link>
                             </li>
@@ -92,26 +92,26 @@ const Footer = () => {
                         <Link to = 'automotive/gotel'>
                             <h3>Automotive</h3>
                         </Link>
-                        <ul className='list '>
+                        <ul className='footer-list '>
                             <li>
-                                <Link to = '/automotive/gotel' className='links'>
+                                <Link to = '/automotive/gotel' className='footer-links'>
                                     Gotel
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/automotive/dhruba' className='links'>
+                                <Link to = '/automotive/dhruba' className='footer-links'>
                                     Dhruba
                                 </Link>
                             </li>
                             <li>
-                                <Link to = '/automotive/botg' className='links'>
+                                <Link to = '/automotive/botg' className='footer-links'>
                                     BOTG
                                 </Link>
                             </li>
                             <li>
                                 <Link 
                                 to = '/automotive/off-highway-power-train-remote-diagnostics'
-                                className='links'
+                                className='footer-links'
                                 >
                                     Off Highway Power Train Remote Diagnostics
                                 </Link>
@@ -120,25 +120,25 @@ const Footer = () => {
                     </Col>
                     <Col span = {6}>
                         <h3>For Associates</h3><br/>
-                        <Button type="primary" className='sign-in'>
+                        <Button type="primary" className='footer-sign-in'>
                             Sign In <ArrowRightOutlined />
                         </Button>
 
 
                         <br/><br/>
                         <h4>We're Social</h4>
-                        <ul className='social-media'>
-                            <li className='media-tag'>
+                        <ul className='footer-social-media'>
+                            <li className='footer-media-tag'>
                                 <a href = 'https://www.facebook.com/brigosha'>
                                     <FacebookFilled style = {{color: '#3E5C9A'}}/>
                                 </a>
                             </li>
-                            <li className='media-tag'>
+                            <li className='footer-media-tag'>
                                 <a href = 'https://www.linkedin.com/company/brigosha-technologies-pvt-lmt/about/'>
                                     <LinkedinFilled style = {{color: '#117BB8'}}/>
                                 </a>
                             </li>
-                            <li className='media-tag'>
+                            <li className='footer-media-tag'>
                                 <a href = 'https://twitter.com/Brigosha'>
                                     <TwitterSquareFilled style = {{color: '#29A9E1'}}/>
                                 </a>
@@ -150,7 +150,7 @@ const Footer = () => {
                 <Row className='footer-footer'>
                     <Col span = {3}>
                         <Dropdown overlay={menu} trigger={['click']}>
-                            <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                            <a href='/'className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                                 English(US) <DownOutlined />
                             </a>
                         </Dropdown>
