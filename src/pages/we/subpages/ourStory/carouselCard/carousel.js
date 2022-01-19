@@ -64,11 +64,14 @@ const Content = styled.div`
 
     .Carosel-Banner{
         width: 100%;
+    }
 
+    .Carosel-Banner: hover{
+        transform: scale(1.01);
+        transition: all 0.5s ease-out;
     }
 
 `
-
 
 const CarouselWrapper = styled(Carousel)`
     padding-left: 120px;

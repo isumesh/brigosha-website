@@ -32,7 +32,7 @@ const StyleTeamImage = styled.div`
     width: 100%;
     height: auto;
     text-align: center;
-    background-color: white;
+    background-color: #F7F7F7;
     line-height: 30px;
 
     .team-image-topline{
@@ -45,6 +45,11 @@ const StyleTeamImage = styled.div`
 
     .team-image{
         width: 100%;
+    }
+
+    .team-image:hover{
+        transform: scale(1.01);
+        transition: all 0.3s ease-out;
     }
 
     .team-button{

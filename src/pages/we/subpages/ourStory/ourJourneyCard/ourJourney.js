@@ -21,8 +21,8 @@ function OurJourney() {
                         of it.
                     </span>
                 </Col>
-                <Col span = {8} className='timeline-image-container'>
-                <img src={Timeline} alt='timeline' className='timeline-image'/>
+                <Col span = {16} className='timeline-image-container'>
+                    <img src={Timeline} alt='timeline' className='timeline-image'/>
                 </Col>
             </Row>
         </OurJourneyStyle>
@@ -58,6 +58,6 @@ const OurJourneyStyle = styled.div`
     }
 
     .timeline-image{
-        
+        transform: scaleX(0.8) scaleY(0.9);
     }
 `

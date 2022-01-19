@@ -19,6 +19,7 @@ const CareerContainer = styled.div`
     padding-left: 120px;
     text-align: center;
     padding-bottom: 100px;
+    background-color: #fff;
 `
 
 const Obj3 = {

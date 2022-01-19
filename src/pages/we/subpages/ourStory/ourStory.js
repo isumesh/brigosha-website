@@ -5,6 +5,7 @@ import Expertise from './expertiseCard/expertise';
 import OurJourney from './ourJourneyCard/ourJourney';
 import TeamImage from './teamImageCard/teamImage';
 import Career from './careerCard/career';
+import Message from './messageCard/message';
 
 function OurStory() {
    return (
@@ -13,6 +14,7 @@ function OurStory() {
          <Achievement />
          <Expertise />
          <OurJourney />
+         <Message />
          <TeamImage/>
          <Career/>
       </div>

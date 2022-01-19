@@ -86,11 +86,6 @@ const CardStyle = styled.div`
     padding-left: 5px;
     color: #565656;
     line-height: 30px;
-
-  }
-
-  .card-content{
-  background-color:  #F7F7F7;
   }
 
   .card-img-container{
